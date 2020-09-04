@@ -1,0 +1,14 @@
+ul {
+  margin-left: 100px;
+  background-color: darkblue;
+  padding: 2em 0;
+  width: 400px;
+  height: 600px;
+}
+
+li {
+  background-color: white;
+  margin: 2em;
+  width: 100px;
+  padding: 1em;
+}

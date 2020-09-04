@@ -1,0 +1,36 @@
+/*Common rules*/
+
+h1, .danger {
+  font-weight: bold;
+}
+
+h1, h2, header p {
+  text-align: center;
+}
+
+#lasttitle, header p span {
+  text-decoration: underline;
+}
+
+/*Specific rules*/
+
+p {
+  font-style: italic;
+}
+
+p span {
+  text-decoration: line-through;
+}
+
+header h2 {
+  text-align: right;
+}
+
+header p {
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+.usual {
+  line-height: 2;
+}

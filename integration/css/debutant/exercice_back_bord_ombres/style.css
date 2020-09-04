@@ -1,0 +1,39 @@
+span {
+  text-decoration: underline;
+}
+
+h2, #deux {
+  color: green;
+  text-transform: uppercase;
+}
+
+#deux {
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+#trois {
+  font-size: 50px;
+  letter-spacing: 2px;
+  background-color: blue;
+  color: white;
+}
+
+input {
+  border: 2px solid #c42727;
+  border-radius: 3px;
+  background-color: lightgrey;
+  color: darkblue;
+  box-shadow: 2px 2px 4px #c42727;
+}
+
+ a {
+  color: red;
+  background-color: black;
+  border: 3px dotted green;
+}
+
+ul li {
+  margin: 5px 0;
+  box-shadow: 3px 3px 5px grey;
+}

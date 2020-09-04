@@ -1,0 +1,70 @@
+/*Common rules*/
+
+html, body, section, aside {
+  height: 100%;
+}
+
+body, header, footer {
+  width: 100%;
+}
+
+section, article {
+  width: 60%;
+}
+
+article, footer, header {
+  text-align: center;
+}
+
+body, h1, h2 {
+  margin: 0;
+}
+
+/*Specific rules*/
+
+header {
+  background-color: orange;
+  height: 15%;
+  padding-top: 2.5em;
+  margin-bottom: 3em;
+}
+
+aside, section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+aside {
+  background-color: lightblue;
+  width: 20%;
+  margin : 0 4%;
+}
+
+nav {
+  background-color: red;
+  width: 80%;
+  margin: auto;
+}
+
+nav li {
+  margin : 1em 0;
+}
+
+section {
+  background-color: lightgrey;
+  margin: 0 4% 3em 4%;
+
+}
+
+article {
+  background-color: purple;
+  height: 25%;
+  margin: 1em auto 1em auto;
+  padding: 1em;
+}
+
+footer {
+  height: 20%;
+  background-color: green;
+  padding-top: 4em;
+}

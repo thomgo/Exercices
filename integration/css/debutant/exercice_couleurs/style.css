@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+p {
+  background-color: black;
+  color: white;
+}
+
+section {
+  width: 100%;
+  height: 200px;
+  background-color: #05668d;
+}
+
+h2 {
+  color: #ebf2fa;
+}
+
+article {
+  background-color: #7ebc89;
+  width: 500px;
+  height: 300px;
+}
+
+article section {
+  background-color: #c1dbb3;
+  width: 250px;
+  height: 150px;
+}
+
+article p {
+  background-color: #679436;
+  color: #a5be00;
+}

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  font-size: 22px;
+}
+
+.first {
+  text-align: center;
+}
+
+.second {
+  text-align: right;
+}
+
+p a {
+  font-style: italic;
+}
+
+li a {
+  font-weight: bold;
+}
+
+#last {
+  text-decoration: line-through;
+}

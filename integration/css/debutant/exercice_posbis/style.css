@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+header {
+  margin-bottom: 3em;
+  background-color: #e4fde1;
+  color: #648381;
+}
+
+header h1 {
+  margin-left: 5em;
+}
+
+header img {
+  width: 60%;
+}
+
+header figure, h1, .news {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h2 {
+  font-style: italic;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+section {
+  width: 70%;
+  margin: auto;
+  padding: 1em;
+  background-color: #fcfcfc;
+}
+
+article img {
+  float: right;
+}
+
+.news img {
+  height: 200px;
+  width: 200px;
+  margin: 0 2.5em;
+}
