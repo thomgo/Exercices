@@ -2,6 +2,6 @@
 
 ## Choisissez une série d'exercices
 
-- [Série une](exercice1.md)
-- [Série deux](exercice2.md)
-- [Série trois](exercice3.md)
+- [Série une](exercices1.md)
+- [Série deux](exercices2.md)
+- [Série trois](exercices3.md)
