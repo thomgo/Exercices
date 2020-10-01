@@ -2,4 +2,4 @@
 
 ## Choisissez une thématique
 - [Exercices de requêtes sur une base de données en ligne](exercicessql.md)
-- [Katas sur CodeWars](kata.md)
+- [Katas sur CodeWars](katas.md)
