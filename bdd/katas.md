@@ -1,3 +1,7 @@
+# Liste de katas pour l'apprentissage du langage SQL
+
+Voici une liste de katas qui vous permettront de pratiquer le langages sql dans le cadre de mises en situation funs et stimulantes ;-)
+
 ## SQL débutant
 
 - https://www.codewars.com/kata/adults-only-sql-for-beginners-number-1/train/sql

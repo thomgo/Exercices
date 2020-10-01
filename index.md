@@ -5,6 +5,5 @@
 - [Outils du développeur web](outils/)
 - [Intégration HTML/CSS](integration/)
 - [Développement front-end avec JavaScript](frontend/)
+- [Développement back-end avec PHP ou Python](backend/)
 - [Bases de données relationnelles avec SQL](bdd/)
-- [Développement back-end avec PHP](backend/)
-- [Développement back-end avec Python](backend/)
