@@ -5,30 +5,30 @@
  */
 class City
 {
-  protected $name;
-  protected $dept;
+  protected string $name;
+  protected int $dept;
 
-  public function setName($name) {
+  public function setName(string $name) {
     $this->name = $name;
   }
 
-  public function setDept($dept) {
+  public function setDept(int $dept) {
     $this->dept = $dept;
   }
 
-  public function getName() {
+  public function getName(): string {
     return $this->name;
   }
 
-  public function getDept() {
+  public function getDept(): int {
     return $this->dept;
   }
 
-  public function showLocation() {
+  public function showLocation(): string {
     return "La ville de " . $this->name . " est dans le " . $this->dept;
   }
 
-  public function __construct($name, $dept) {
+  public function __construct(string $name, int $dept) {
     $this->setName($name);
     $this->setDept($dept);
   }

@@ -1,7 +1,7 @@
 <?php
 
 require "form.php";
-$form = new Form("project.php", ["BgDark", "FormA"]);
+$form = new Form("");
 
 $form->setTexte("name");
 
