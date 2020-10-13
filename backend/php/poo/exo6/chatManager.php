@@ -5,17 +5,17 @@
  */
 final class chatManager
 {
-  private $_db;
+  private PDO $_db;
 
-  public function setDb($connection) {
+  public function setDb(PDO $connection) {
     $this->_db = $connection;
   }
 
-  public function getDb() {
+  public function getDb():PDO {
     return $this->_db;
   }
 
-  public function getCats() {
+  public function getCats():array {
     $query = $this->getDb()->query('SELECT * FROM chat');
     //Si on souhaite récupérer directement des objets
     $data = $query->fetchAll(PDO::FETCH_CLASS, "chat");
@@ -30,7 +30,7 @@ final class chatManager
   }
 
   //Fonction pour ajouter un chat, elle attend explicitement un objet chat et non pas un tableau
-  public function addCat(chat $chat) {
+  public function addCat(chat $chat):bool {
     $query = $this->getDb()->prepare("INSERT INTO chat(name, age, sexe, color) VALUES(:name, :age, :sexe, :color)");
     $result = $query->execute([
       "name" => $chat->getName(),

@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=1);
 require "clio.php";
 
 //On instancie plusieurs clios

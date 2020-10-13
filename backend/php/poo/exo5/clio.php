@@ -1,12 +1,11 @@
 <?php
-declare(strict_types=1);
 /**
  *
  */
 class clio
 {
-  protected $doors;
-  protected $color;
+  protected int $doors;
+  protected int $color;
   //Attribut statique qui concerne tous les objest instanciés
   private static $price = 15000;
 
@@ -32,7 +31,7 @@ class clio
     }
   }
 
-  public function getDoors() {
+  public function getDoors():int {
     return $this->doors;
   }
 
@@ -40,7 +39,7 @@ class clio
     $this->color = $color;
   }
 
-  public function getColor() {
+  public function getColor():int {
     return $this->color;
   }
 
@@ -49,7 +48,7 @@ class clio
      self::$price = $price;
   }
 
-  public static function getPrice()  {
+  public static function getPrice():int  {
     return self::$price;
   }
 

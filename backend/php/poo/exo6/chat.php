@@ -5,11 +5,11 @@
 class chat
 {
 
-  protected $id;
-  protected $name;
-  protected $age;
-  protected $sexe;
-  protected $color;
+  protected int $id;
+  protected string $name;
+  protected int $age;
+  protected string $sexe;
+  protected string $color;
 
   //Constantes qui nous serviront à vérifier les valeurs passées aux setters
   const sexes = ["male", "female"];
@@ -52,28 +52,28 @@ class chat
     }
   }
 
-  public function getId() {
+  public function getId():int {
     return $this->id;
   }
 
-  public function getName() {
+  public function getName():string {
     return $this->name;
   }
 
-  public function getAge() {
+  public function getAge():int {
     return $this->age;
   }
 
-  public function getSexe() {
+  public function getSexe():string {
     return $this->sexe;
   }
 
-  public function getColor() {
+  public function getColor():string {
     return $this->color;
   }
 
   public function speak() {
-    echo "Miaou miaou, je m'appelle " . $this->name;
+    echo "<p>Miaou miaou, je m'appelle " . $this->name . "</p>";
   }
 
   public function hydrate(array $data) {
@@ -84,7 +84,7 @@ class chat
   }
 
   //On a modifié le constructeur afin qu'il puissent supporter le PDO FETCH_CLASS
-  //Fetch class n'appelle par le constructeur avec un argument, on a donc considéré que data pouvait être null
+  //Fetch class n'appelle pas le constructeur avec un argument, on a donc considéré que data pouvait être null
   function __construct(array $data = null)
   {
     if($data) {
