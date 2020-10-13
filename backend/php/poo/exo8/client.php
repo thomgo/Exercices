@@ -5,13 +5,13 @@
  */
 class client extends personne
 {
-  protected $adresse;
+  protected string $adresse;
 
-  public function setAdresse($adresse) {
+  public function setAdresse(string $adresse) {
     $this->adresse = $adresse;
   }
 
-  public function getAdresse() {
+  public function getAdresse():string {
     return $this->adresse;
   }
 

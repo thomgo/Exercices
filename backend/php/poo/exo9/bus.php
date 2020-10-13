@@ -15,7 +15,7 @@ class bus extends vehicule
     }
   }
 
-  public function getEtages() {
+  public function getEtages():int {
     return $this->etages;
   }
 

@@ -6,22 +6,22 @@
  */
 class electeur extends personne
 {
-  protected $bureau;
-  protected $vote;
+  protected string $bureau;
+  protected bool $vote;
 
-  public function setBureau($bureau) {
+  public function setBureau(string $bureau) {
     $this->bureau = $bureau;
   }
 
-  public function getBureau() {
+  public function getBureau():string {
     return $this->bureau;
   }
 
-  public function setVote($vote) {
+  public function setVote(bool $vote) {
     $this->vote = $vote;
   }
 
-  public function getVote() {
+  public function getVote():bool {
     return $this->vote;
   }
 

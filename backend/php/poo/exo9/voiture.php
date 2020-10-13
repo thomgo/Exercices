@@ -15,7 +15,7 @@ class voiture extends vehicule
     }
   }
 
-  public function getPortes() {
+  public function getPortes():int {
     return $this->portes;
   }
 

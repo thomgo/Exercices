@@ -6,22 +6,22 @@
  */
 abstract class personne
 {
-  protected $nom;
-  protected $prenom;
+  protected string $nom;
+  protected string $prenom;
 
-  public function setNom($nom) {
+  public function setNom(string $nom) {
     $this->nom = $nom;
   }
 
-  public function getNom() {
+  public function getNom():string {
     return $this->nom;
   }
 
-  public function setPrenom($prenom) {
+  public function setPrenom(string $prenom) {
     $this->prenom = $prenom;
   }
 
-  public function getPrenom() {
+  public function getPrenom():string {
     return $this->prenom;
   }
 

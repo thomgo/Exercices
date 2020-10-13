@@ -7,22 +7,22 @@
 abstract class vehicule
 {
 
-  protected $immatriculation;
-  protected $couleur;
+  protected string $immatriculation;
+  protected string $couleur;
 
-  public function setImmatriculation($immatriculation) {
+  public function setImmatriculation(string $immatriculation) {
     $this->immatriculation = $immatriculation;
   }
 
-  public function getImmatriculation() {
+  public function getImmatriculation():string {
     return $this->immatriculation;
   }
 
-  public function setCouleur($couleur) {
+  public function setCouleur(string $couleur) {
     $this->couleur = $couleur;
   }
 
-  public function getCouleur() {
+  public function getCouleur():string {
     return $this->couleur;
   }
 
