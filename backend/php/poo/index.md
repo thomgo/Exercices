@@ -5,6 +5,7 @@
 - [Découvrir les classes](class/class.md)
 - [Ajouter des attributs](attribut/attribut.md)
 - [Ajouter des méthodes](method/method.md)
+- [Utiliser l'encapsulation](encapsulation/encapsulation.md)
 - [Exercice 1 : travailler les propriétés et méthodes](exo1/exo1.md)
 - [Exercice 2 : utiliser le constructeur d'objets](exo2/exo2.md)
 - [Exercice 3 : pratiquer les objets](exo3/exo3.md)
