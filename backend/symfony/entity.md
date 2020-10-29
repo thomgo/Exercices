@@ -9,8 +9,16 @@ Vous allez maintenant créer l’entité/migration centrale de votre site, j’a
 - Nom de la catégorie associée
 - Nombre de vues
 
-Une fois votre entité/migration créée, mettez à jour votre schéma de base de données, normalement vous devriez voir une nouvelle table apparaître dans MySQL.
+Attention pour l'instant auteur et catégorie, ne font pas références à d'autres entité, ce sont de simples chaînes de caractères
 
-Selon votre framework, rajoutez une méthode qui vous retourne les 50 premiers caractères du contenu, elle vous servira à l’exercice suivant
+Une fois votre entité/migration créée, mettez à jour votre schéma de base de données à l'aide de la console. Normalement vous devriez voir une nouvelle table apparaître dans MySQL.
 
-Prenez quelques minutes insérer un jeu de données (vous le faire en mode bricolage dans PhpMyAdmin ou faire les pros et utilisez les outils spécialement conçus à cet effet dans les frameworks)  cela nous permettra d’alimenter nos futures vues.
+Dans l'entité article rajoutez une méthode qui vous retourne les 50 premiers caractères du contenu, elle vous servira à l’exercice suivant
+
+Prenez quelques minutes pour insérer un jeu de données. Deux solutions :
+- En mode bricolage dans PhpMyAdmin
+- En mode pro en utilisant les fixtures.
+
+Pour vous aider :
+- https://symfony.com/doc/current/doctrine.html
+- https://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html

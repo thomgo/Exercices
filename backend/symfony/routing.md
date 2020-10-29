@@ -9,3 +9,8 @@ Dans ce premier exercice, vous allez donc créer des routes, chaque route décle
 - Une route single qui correspondra à la route vers laquelle le visiteur est redirigé quand il clique sur un article. Cette route matchera l'url /article/id. Le paramètre id ne peut être composé que de chiffres et sera mis par défaut à 1 s’il n’est pas rempli.
 
 - Une route pour l’ajout d’un article dans l’espace d’administration qui matchera l'url admin/article/add.
+
+Pour vous aider :
+- https://symfony.com/doc/current/page_creation.html
+- https://symfony.com/doc/current/routing.html
+- https://symfony.com/doc/current/controller.html
