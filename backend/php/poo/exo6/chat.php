@@ -4,6 +4,9 @@
  */
 class chat
 {
+  //Constantes qui nous serviront à vérifier les valeurs passées aux setters
+  const SEXES = ["male", "female"];
+  const COLORS = ["white", "grey", "black", "ginger"];
 
   protected int $id;
   protected string $name;
@@ -11,9 +14,6 @@ class chat
   protected string $sexe;
   protected string $color;
 
-  //Constantes qui nous serviront à vérifier les valeurs passées aux setters
-  const sexes = ["male", "female"];
-  const colors = ["white", "grey", "black", "ginger"];
 
   public function setId(int $id) {
     $this->id = $id;
@@ -35,7 +35,7 @@ class chat
 
   //On vérifie au sein du setter que le sexe et la couleur correspondent aux constantes
   public function setSexe(string $sexe) {
-    if(in_array($sexe, self::sexes)) {
+    if(in_array($sexe, self::SEXES)) {
       $this->sexe = $sexe;
     }
     else {
@@ -44,7 +44,7 @@ class chat
   }
 
   public function setColor(string $color) {
-    if(in_array($color, self::colors)) {
+    if(in_array($color, self::COLORS)) {
       $this->color = $color;
     }
     else {
