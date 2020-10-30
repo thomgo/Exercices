@@ -15,5 +15,10 @@ Quelques indications :
 
 Vous utiliserez ce service dans le contrôleur de la route single avant l’affichage du contenu de l’article.
 
+Typiquement dans le contrôleur, vous devez pouvoir écrire quelque chose comme ceci :
+```
+$article = $swearCleaner->cleanSwear($article);
+```
+
 Pour vous aider :
 - https://symfony.com/doc/current/service_container.html

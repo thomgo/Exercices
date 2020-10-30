@@ -11,3 +11,4 @@ Au travers de cette série d'exercices, vous allez réaliser un blog très simpl
 - [Créer un service](service.md)
 - [Gérer la sécurité de l'application](security.md)
 - [Gérer ses formulaires](form.md)
+- [Améliorer son application](amelioration.md)
