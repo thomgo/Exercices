@@ -7,5 +7,5 @@
 - [Les boucles](loops/loops.md)
 - [Les fonctions natives](functions_native/functions_native.md)
 - [Créer ses fonctions](functions_creation/functions_creation.md)
-- [Exercices partie 1](partie1/README.md)
-- [Exercices partie 2](partie2/README.md)
+- [Exercices partie 1](partie1/partie1.md)
+- [Exercices partie 2](partie2/partie2.md)
