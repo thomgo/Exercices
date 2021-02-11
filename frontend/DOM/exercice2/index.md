@@ -10,4 +10,6 @@ Au travers de cet exercice, vous apprendre à :
 
 ## Consignes
 
-L'utilisateur dispose de 4 cases, chacune d'une couleur différente. Un cinquième case est quant à elle vide. Quand l'utilisateur clique sur une couleur, la case vide est remplie par la couleur sur laquelle il vient de cliquer.
+L'utilisateur dispose sur une page HTML dans le navigateur de 4 cases. Chacune de ces cases est remplie d'une couleur différente. Une cinquième case en dessous est quant à elle vide. 
+
+Quand l'utilisateur clique sur une couleur, la case vide est remplie par la couleur sur laquelle il vient de cliquer.
