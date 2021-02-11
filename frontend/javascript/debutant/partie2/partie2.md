@@ -1,10 +1,8 @@
 ## 1\.Exercice 1 : True ou False ?
 
-Déclarer 2 variables de type String. L'une d'entre elles doit être vide.
+Déclarer 2 variables de type String. L'une d'entre elles doit être une chaîne de caractères vide.
 
-Ecrire un programme vérifiant si la String est vide ou non, et renvoyer la valeur (true ou false) dans la console.
-
-Pour cet exercice, vous devrez commencer à vous renseigner par vous-même sur les conditions en JavaScript.
+Vérifiez pour chaque variable, à l'aide d'une condition, si la chaîne est vide et afficher la valeur true ou false dans la console selon le résultat.
 
 ## 2\.Exercice 2 : Calculer mon âge
 
@@ -35,8 +33,8 @@ Demander son nom au visiteur.
 
 Afficher dans un message la lettre par laquelle son prénom commence et la lettre par laquelle il termine. Ces lettres seront forcément affichées majuscules.
 
-Faire de même pour son nom.
+Faire ensuite de même pour son nom.
 
 Afficher dans un message la combinaison des lettres, par exemple pour Marc Gemini : "MCGI".
 
-Demander son âge au visiteur  et lui afficher le résultat de celui-ci divisé par 33. S'assurer que si ce nombre comporte une virgule alors il sera arrondi à l'entier supérieur ou inférieur.
+Demander ensuite son âge au visiteur  et lui afficher le résultat de celui-ci divisé par 33. S'assurer que si ce nombre comporte une virgule alors il sera arrondi à l'entier supérieur ou inférieur.

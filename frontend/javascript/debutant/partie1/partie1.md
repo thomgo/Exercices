@@ -32,9 +32,15 @@ Attention aux espaces
 
 Déclarer la variable myNumber = "123"
 
-Afficher la variable a dans la console en modifiant son type String en type Number
+Afficher la variable a dans la console en modifiant son type String en type Number.
+
+Pour vous assurer du succès de la transformation vous pouvez utiliser l'opérateur typeof (https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/L_op%C3%A9rateur_typeof)
 
 
 ## 6\.Exercice 6 : Majuscules et miniscules
 
-Ecrire un programme permettant de mettre en majuscule le contenu d'une String. Même chose pour le mettre en miniscule.
+Déclarez une variables contenant une chaîne de caractères avec des minuscules et des majuscules
+
+Affichez dans la console le contenu de cette variable mais entièrement en majuscules.
+
+A la suite, affichez dans la console le contenu de cette variable mais entièrement en minuscules.
