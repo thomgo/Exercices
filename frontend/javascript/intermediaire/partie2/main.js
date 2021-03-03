@@ -8,7 +8,7 @@ var board = "\n";
 
 for(var i=1; i <= 8; i++) {
   for(var j=1; j <= 16; j++) {
-    if(j%2===0) {
+    if((i + j)%2===0) {
       board += " ";
     }
     else {
