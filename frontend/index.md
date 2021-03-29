@@ -6,4 +6,4 @@
 - [Exercices intermédiaires](javascript/intermediaire/)
 - [Programmation orientée objet](javascript/poo/)
 - [Katas CodeWars](javascript/kata.md)
-- [Dynamiser l'interface avec le DOM](javascript/DOM/)
+- [Dynamiser l'interface avec le DOM](DOM/)
