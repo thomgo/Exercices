@@ -1,22 +1,16 @@
 <?php
-//On charge les fichier nécessaires
-require "model/db.php";
-require "model/entity/cat.php";
-require "model/catManager.php";
 
-//On instancie le manager qui va nous permettre de gérer la table
-$catManager = new catManager();
+require "form.php";
+require "upgradedForm.php";
 
-//On vérifie qu'un formulaire a été soumis
-if(!empty($_POST)) {
-  //On instancie un objet chat avec les données du formulaire
-  $cat = new Cat($_POST);
-  //On ajoute l'objet chat en base de données
-  $catManager->addCat($cat);
-}
+$form = new uppgradedForm("");
 
-//On récupère un tableau contenant des objets chat pour l'afficher dans la vue
-$cats = $catManager->getCats();
+$form->setTexte("name");
+$form->setRadio("radio", ["Homme" => "1", "Femme" => "0"]);
+$form->setCheckbox("check[]", ["Volvo" => "suédois", "Renault" => "français"]);
+$form->setSubmit("form", "envoyer");
 
-require "view/indexView.php";
+$form->showForm();
+
+var_dump($_POST);
  ?>
