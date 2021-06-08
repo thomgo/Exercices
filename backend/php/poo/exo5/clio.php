@@ -11,9 +11,9 @@ class Clio
 
   //Constantes = propriétées appartenant à la class et non à l'objet
 
-  const fiveDoors = 5;
-  const threeDoors = 3;
-  const colors = [
+  const FIVEDOORS = 5;
+  const THREEDOORS = 3;
+  const COLORS = [
       "red" => 10215455,
       "green" => 131533541,
       "purple" => 76513684,
@@ -26,7 +26,7 @@ class Clio
 
 
   public function setDoors(int $doors) {
-    if(in_array($doors, [self::threeDoors, self::fiveDoors])) {
+    if(in_array($doors, [self::THREEDOORS, self::FIVEDOORS])) {
       $this->doors = $doors;
     }
   }
@@ -54,8 +54,10 @@ class Clio
 
   public function hydrate($data) {
     foreach ($data as $key => $value) {
-      $methode = "set". ucfirst($key);
-      $this->$methode($value);
+      $method = "set". ucfirst($key);
+      if (method_exists($this, $method)) {
+        $this->$method($value);
+      }
     }
   }
 
