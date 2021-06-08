@@ -17,18 +17,18 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `chats`
+-- Base de données :  `cats`
 --
-CREATE DATABASE IF NOT EXISTS `chats` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `chats`;
+CREATE DATABASE IF NOT EXISTS `cats` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `cats`;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `chat`
+-- Structure de la table `cat`
 --
 
-CREATE TABLE `chat` (
+CREATE TABLE `cat` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `age` int(11) NOT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `chat` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `chat`
+-- Contenu de la table `cat`
 --
 
-INSERT INTO `chat` (`id`, `name`, `age`, `sexe`, `color`) VALUES
+INSERT INTO `cat` (`id`, `name`, `age`, `sexe`, `color`) VALUES
 (1, 'Miaous', 5, 'male', 'white'),
 (2, 'mimine', 3, 'male', 'ginger');
 
@@ -49,9 +49,9 @@ INSERT INTO `chat` (`id`, `name`, `age`, `sexe`, `color`) VALUES
 --
 
 --
--- Index pour la table `chat`
+-- Index pour la table `cat`
 --
-ALTER TABLE `chat`
+ALTER TABLE `cat`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -59,9 +59,9 @@ ALTER TABLE `chat`
 --
 
 --
--- AUTO_INCREMENT pour la table `chat`
+-- AUTO_INCREMENT pour la table `cat`
 --
-ALTER TABLE `chat`
+ALTER TABLE `cat`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

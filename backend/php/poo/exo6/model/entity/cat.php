@@ -2,7 +2,7 @@
 /**
  *
  */
-class chat
+class Cat
 {
   //Constantes qui nous serviront à vérifier les valeurs passées aux setters
   const SEXES = ["male", "female"];
@@ -78,8 +78,10 @@ class chat
 
   public function hydrate(array $data) {
       foreach ($data as $key => $value) {
-        $methode = "set". ucfirst($key);
-        $this->$methode($value);
+        $method = "set". ucfirst($key);
+        if(method_exists($this, $method)) {
+          $this->$method($value);
+        }
       }
   }
 

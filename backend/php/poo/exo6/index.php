@@ -1,22 +1,22 @@
 <?php
 //On charge les fichier nécessaires
-require "db.php";
-require "chat.php";
-require "chatManager.php";
+require "model/db.php";
+require "model/entity/cat.php";
+require "model/catManager.php";
 
 //On instancie le manager qui va nous permettre de gérer la table
-$chatManager = new chatManager();
+$catManager = new catManager();
 
 //On vérifie qu'un formulaire a été soumis
 if(!empty($_POST)) {
   //On instancie un objet chat avec les données du formulaire
-  $chat = new chat($_POST);
+  $cat = new Cat($_POST);
   //On ajoute l'objet chat en base de données
-  $chatManager->addCat($chat);
+  $catManager->addCat($cat);
 }
 
 //On récupère un tableau contenant des objets chat pour l'afficher dans la vue
-$chats = $chatManager->getCats();
+$cats = $catManager->getCats();
 
-require "indexView.php";
+require "view/indexView.php";
  ?>
