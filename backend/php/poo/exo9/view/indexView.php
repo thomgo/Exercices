@@ -21,7 +21,7 @@
 
 <h2>Les chats présents</h2>
 <?php
-foreach ($chats as $key => $chat) {
-  $chat->speak();
+foreach ($cats as $key => $cat) {
+  $cat->speak();
 }
  ?>

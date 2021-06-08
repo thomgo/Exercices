@@ -1,38 +1,22 @@
 <?php
+//On charge les fichier nécessaires
+require "model/db.php";
+require "model/entity/cat.php";
+require "model/catManager.php";
 
-require "vehicule.php";
-require "bus.php";
-require "voiture.php";
+//On instancie le manager qui va nous permettre de gérer la table
+$catManager = new catManager();
 
-//On instancie une voiture
-$voiture = new voiture([
-  "immatriculation" =>"f4f5f1v",
-  "couleur" => "rouge",
-  "portes" => "5"
-]);
+//On vérifie qu'un formulaire a été soumis
+if(!empty($_POST)) {
+  //On instancie un objet chat avec les données du formulaire
+  $cat = new Cat($_POST);
+  //On ajoute l'objet chat en base de données
+  $catManager->addCat($cat);
+}
 
-//On instancie un bus
-$bus = new bus([
-  "immatriculation" =>"152sff41",
-  "couleur" => "bleu",
-  "etages" => "2"
-]);
+//On récupère un tableau contenant des objets chat pour l'afficher dans la vue
+$cats = $catManager->getCats();
 
-//On affiche les propriétés de la voiture
-echo "<p>" . $voiture->getImmatriculation() . "</p>";
-echo "<p>" . $voiture->getCouleur() . "</p>";
-echo "<p>" . $voiture->getPortes() . "</p>";
-//On affiche les propriétés du bus
-echo "<p>" . $bus->getImmatriculation() . "</p>";
-echo "<p>" . $bus->getCouleur() . "</p>";
-echo "<p>" . $bus->getEtages() . "</p>";
-
-//On modifie des valeurs
-$voiture->setCouleur("gris");
-$bus->setEtages(1);
-
-//On affiche ces valeurs
-echo "<p>" . $voiture->getCouleur() . "</p>";
-echo "<p>" . $bus->getEtages() . "</p>";
-
+require "view/indexView.php";
  ?>

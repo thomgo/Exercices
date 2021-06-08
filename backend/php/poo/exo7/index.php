@@ -1,16 +1,28 @@
 <?php
+require "personne.php";
+require "client.php";
+require "electeur.php";
 
-require "form.php";
-require "upgradedForm.php";
+//On instancie un client
+$client = new client([
+  "nom" => "Quertein",
+  "prenom" => "Jean",
+  "adresse" => "36 rue du clocher Sainghin"
+]);
 
-$form = new uppgradedForm("");
+//On affiche les coordonées du client
+$client->getCoord();
 
-$form->setTexte("name");
-$form->setRadio("radio", ["Homme" => "1", "Femme" => "0"]);
-$form->setCheckbox("check[]", ["Volvo" => "suédois", "Renault" => "français"]);
-$form->setSubmit("form", "envoyer");
+//On instancie un électeur
+$electeur = new electeur([
+  "nom" => "Quertein",
+  "prenom" => "Jean",
+  "bureau" => "Wasquehal centre"
+]);
 
-$form->showForm();
+//On fait voter l'électeur une première fois
+$electeur->aVoter();
+//On essaie de le faire voter une deuxième fois
+$electeur->aVoter();
 
-var_dump($_POST);
  ?>
