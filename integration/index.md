@@ -3,4 +3,4 @@
 ## Choisissez une thématique
 
 - [Exercices sur CSS]()
-- [Exercices sur le framework Bootstrap]()
+- [Exercices sur le framework Bootstrap](bootstrap/)
