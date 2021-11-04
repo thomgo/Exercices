@@ -2,7 +2,7 @@ function Presentation(props) {
     const userList = Object.keys(props.user).map((key) => <li className="list-group-item" key={key}>{key + " : " + props.user[key]}</li>);
     
     return(
-        <section className="my-2">
+        <section className="my-4">
             <h2>Présentation</h2>
             <div className="row">
                 <div className="col-12 col-md-8 col-lg-6">
