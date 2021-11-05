@@ -7,3 +7,4 @@
 - [Programmation orientée objet](javascript/poo/)
 - [Katas CodeWars](javascript/kata.md)
 - [Dynamiser l'interface avec le DOM](DOM/)
+- [Créer des interfaces dynamiques avec React JS](framework/exercicesreact/README.md)
