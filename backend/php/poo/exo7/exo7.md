@@ -1,4 +1,4 @@
-# Exercice 8 : héritage
+# Exercice 7 : héritage
 
 Créez une classe abstraite personne. Elle déclare les propriétés :
 - nom

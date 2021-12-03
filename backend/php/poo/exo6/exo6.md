@@ -1,4 +1,4 @@
-# Exercice 7 : héritage
+# Exercice 6 : héritage
 
 Créez une sous-classe nommée uppgradedForm héritant de la classe form de l’exercice 4.
 

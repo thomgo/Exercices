@@ -1,4 +1,4 @@
-# Exercice 6 : gérer ses objets en base de données
+# Exercice 9 : gérer ses objets en base de données
 
 Dans cet exercice vous allez gérer base de données simple en orienté objet, celle-ci vous permettra de gérer des chats.
 
