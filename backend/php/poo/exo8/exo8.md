@@ -1,4 +1,4 @@
-# Exercice 9 : héritage
+# Exercice 8 : héritage
 
 **Etape 1** :
 
